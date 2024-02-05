@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code</title>
+</head>
+<body>
+    <script>
+var giftA=0,giftB=0,giftC=0;
+var productA=parseInt(prompt("Enter Number of Product A:"));
+if (productA>0){
+var giftA=parseInt(prompt("How many Product A wrapped as gift:"));
+  if(giftA>productA){
+    giftA=parseInt(prompt("Number of product A as gift is grater than total Product A\nHow many Product A wrapped as gift:"));
+  }
+}
+var productB=parseInt(prompt("Enter Number of Product B:"));
+if (productB>0){
+var giftB=parseInt(prompt("How many Product B wrapped as gift:"));
+   if(giftB>productB){
+    giftB=parseInt(prompt("Number of product B as gift is grater than total Product B\nHow many Product B wrapped as gift:"));
+  }
+}
+var productC=parseInt(prompt("Enter Number of Product C:"));
+if (productC>0){
+var giftC=parseInt(prompt("How many Product C wrapped as gift:"));
+   if(giftC>productC){
+    giftC=parseInt(prompt("Number of product C as gift is grater than total Product C\nHow many Product C wrapped as gift:"));
+  }
+}
+var discountName='';
+wrap=giftA+giftB+giftC;
+
+function totalPrice(a,b,c){
+    total=(a*20)+(b*40)+(c*50);
+    return total;;
+}
+
+function flatTenDiscount(total){
+    if(total>200){
+        total=total-10;
+    }
+    return total;
+}
+
+function bulkFiveDiscount(a,b,c,total){
+if(a>10){
+total=total-((a*20)*(5/100));
+}
+if(b>10){
+total=total-((b*40)*(5/100));
+}
+if(c>10){
+total=total-((c*50)*(5/100));
+}
+return total;
+}
+
+function bulkTenDiscount(a,b,c,total){
+if(a+b+c > 20){
+total=total-(total*(10/100));
+}
+return total;
+}
+
+function tieredFiftyDiscount(a,b,c,total){
+totalQuntity=a+b+c;
+if(totalQuntity>30){
+ if(a>15){
+ m=a-15;
+ total=total-((m*20)*.5)
+}
+if(b>15){
+ m=b-15;
+ total=total-((m*40)*.5);
+}
+if(c>15){
+ m=c-15;
+ total=total-((m*50)*.5);
+}
+}
+return total;
+}
+
+function shippingFee(a,b,c){
+    t=(a+b+c)/10
+    ship=(t%1==0)? t*5 :(parseInt(t)+1)*5;
+    return ship;
+}
+
+total=totalPrice(productA,productB,productC);
+flatTen=flatTenDiscount(total);
+bulkFive=bulkFiveDiscount(productA,productB,productC,total);
+bulkTen=bulkTenDiscount(productA,productB,productC,total);
+tiredTen=tieredFiftyDiscount(productA,productB,productC,total);
+shippingFee=shippingFee(productA,productB,productC);
+
+if(flatTen==total && bulkFive==total && bulkTen==total && tiredTen==total){
+    discountName="No discount";
+    discountPrice=total;
+}else if(flatTen<=bulkFive && flatTen<=bulkTen && flatTen<=tiredTen){
+    discountName="flat_10_discount";
+    discountPrice=flatTen;
+}else if(bulkFive<=flatTen && bulkFive<=bulkTen && bulkFive<=tiredTen){
+    discountName="bulk_5_discount";
+    discountPrice=bulkFive;
+}else if(bulkTen<=flatTen && bulkTen<=bulkFive && bulkTen<=tiredTen){
+    discountName="bulk_10_discount";
+    discountPrice=bulkTen;
+}else{
+    discountName="tiered_50_discount";
+    discountPrice=tiredTen;
+}
+
+console.log(`Product A : ${productA}   ${productA*20}$ `);
+console.log(`Product B : ${productB}   ${productB*40}$ `);
+console.log(`Product C : ${productC}   ${productC*50}$ `);
+console.log(`Subtotal  :     ${total}$`);
+console.log(`Discountname   : ${discountName}`);
+console.log(`DisconutAmuont : ${total-discountPrice}$`);
+console.log(`Shipping Fee   : ${shippingFee}$`);
+console.log(`Wrap Fee       : ${wrap}$`);
+console.log(`Total          : ${discountPrice+shippingFee+wrap}$`)
+
+    </script>
+</body>
+</html>
