@@ -1,0 +1,34 @@
+1. Why do you like to join as a Software developer?
+
+   I am highly passionate about join as a Software Developer. Becuase most importantly I enjoying the process of Software development. I like to introduce new softwares to people and makes their lives better. Now Every industry is dependent on IT indusutry especially on softwares. That is why I entered the IT industury, learned Software development and now like to join as a software developer. Being a part of this dynamic field means constant learning and adapting to new technologies. Moreover, I belelve that I have good knowledge in software development technologies like Programming languages and frameworks etc.
+
+2. List top 3 softwares / tools that inspire you. Why do these tools inspire you?
+
+- VS Code
+    VS Code is a famous IDE with multi-language support. It has been very helpful in my software development journey. It reduce the effort of a developer. Rich extension ecosystem contribute to its adaptability.
+- Git
+    Git is a powerful version control system. It helps and inspires me lot. Git provides many benefits for a developer like easy to manage and merge changes in code, and allows collaboration among multiple developers.
+- Jira
+    Widely used project mangement tool Jira also insipire me because of its wide range of features and flexibility.
+
+3. List top 3 organisations you like to join in your career & why you like these organisations.
+
+- Google
+   Google is one of the top successful IT companies in the world. Google provides many services for users for free. As a software developer I would like to explore the culture and creative environment of the company.
+- Amazon
+  Amazon is a global e-commerce and technology organization. I like to join Amazon for work with talented team and explore the creative environment.
+- Zennode
+  I like to join a growing company like Zennode. Because, as a junior developer I can ensure professional growth, mentorship from experienced developers and hands-on experience.
+
+4. How you position yourself in this industry after 2 years.
+ 
+        After two years, I position myself as a senior software developer in the industry. In two years I plan to have gained valuable experience in software development. I aim to expand my technical skills and keep updated in industry.
+
+5. List 3 projects / products you have built or have planned to build in the upcoming year, also explain your role in the same.
+
+- Shopping Cart-  E-commerce web appliction.
+                  Personal project
+- OLX Clone - Ecommerce web applicaton like OLX.
+              Personal project
+- Android app for bus safty - Combinaton of web and android appication 
+                              Team lead in the final year project.
